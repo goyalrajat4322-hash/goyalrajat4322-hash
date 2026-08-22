@@ -81,6 +81,29 @@
 
 <br>
 
+<!-- ==================== ACHIEVEMENTS ==================== -->
+<h3><code>rajat@github ~ $ ./achievements.sh</code></h3>
+
+<p>
+  <a href="https://github.com/goyalrajat4322-hash?tab=achievements">
+    <img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="60" alt="Quickdraw" title="Quickdraw: Closed an issue or PR within 5 minutes" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/goyalrajat4322-hash?tab=achievements">
+    <img src="https://github.githubassets.com/assets/pull-shark-bronze-b08885a539e6.png" width="60" alt="Pull Shark x2" title="Pull Shark (Bronze x2): Merged 16+ pull requests" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/goyalrajat4322-hash?tab=achievements">
+    <img src="https://github.githubassets.com/assets/pair-extraordinaire-bronze-26248384b2a8.png" width="60" alt="Pair Extraordinaire x2" title="Pair Extraordinaire (Bronze x2): Co-authored 10+ merged commits" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/goyalrajat4322-hash?tab=achievements">
+    <img src="https://github.githubassets.com/assets/yolo-default-be0bb92e0172.png" width="60" alt="YOLO" title="YOLO: Merged a PR without code review" />
+  </a>
+</p>
+
+<br>
+
 <!-- ==================== CONNECT & LINKS ==================== -->
 <h3><code>rajat@github ~ $ ./links.sh</code></h3>
 
