@@ -7,26 +7,26 @@ import html
 import os
 import sys
 
-from PIL import Image, ImageEnhance, ImageFilter
+from PIL import Image, ImageEnhance
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "source-prepped.png")
 OUT = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "..", "rajat-ascii.svg")
 
-COLS = 50
-ROWS = 28
+COLS = 46
+ROWS = 21
 CELL_W = 7.5
 CELL_H = 11.5
 RAMP = " .`:-=+*cs#%@"
 
 CONTRAST = 1.15
 BRIGHTNESS = 1.0
-GAMMA = 1.15
-WHITE_FLOOR = 0.85
+GAMMA = 1.10
+WHITE_FLOOR = 0.82
 
-PAD = 16
+PAD = 17
 TITLEBAR_H = 28
-STATUS_H = 26
+STATUS_H = 28
 ART_W = int(COLS * CELL_W)
 ART_H = int(ROWS * CELL_H)
 CANVAS_W = 380
@@ -46,15 +46,8 @@ STATIC = bool(os.environ.get("STATIC"))
 
 def generate():
     if not os.path.exists(SRC):
-        # Fallback to source-photo.jpg or avatar if prepped doesn't exist
         src_photo = os.path.join(HERE, "..", "source-photo.jpg")
-        if os.path.exists(src_photo):
-            img_path = src_photo
-        else:
-            # Create a procedural terminal avatar
-            img = Image.new("L", (COLS, ROWS), 240)
-            img.save(SRC)
-            img_path = SRC
+        img_path = src_photo if os.path.exists(src_photo) else SRC
     else:
         img_path = SRC
 
@@ -78,7 +71,7 @@ def generate():
             chars.append(RAMP[idx])
         rows_txt.append("".join(chars))
 
-    art_top = TITLEBAR_H + 12
+    art_top = TITLEBAR_H + 10
 
     parts = []
     parts.append(
@@ -131,7 +124,7 @@ def generate():
 
     # Status bar
     status_line_y = CANVAS_H - STATUS_H
-    status_y = status_line_y + 17
+    status_y = status_line_y + 18
     parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W}" y2="{status_line_y:.1f}" stroke="{FRAME}"/>')
     parts.append(
         f'<text x="{PAD}" y="{status_y:.1f}" fill="{TITLE_TEXT}" font-size="11.5">'
