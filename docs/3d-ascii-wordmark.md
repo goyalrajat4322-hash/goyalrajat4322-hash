@@ -66,3 +66,5 @@ python scripts/make_ascii_svg.py source-prepped.png rajat-ascii.svg
 <!-- sync-token: 6 -->
 
 <!-- sync-token: 7 -->
+
+<!-- sync-token: 8 -->
