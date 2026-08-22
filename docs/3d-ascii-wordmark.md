@@ -56,3 +56,5 @@ python scripts/make_ascii_svg.py source-prepped.png rajat-ascii.svg
 - Auto-commits updated SVGs using `git-auto-commit-action` with `[skip ci]`.
 
 <!-- Co-authored contribution for documentation -->
+
+<!-- sync-token: 3 -->
