@@ -1,22 +1,22 @@
 {
   "username": "goyalrajat4322-hash",
-  "generated_at": "2026-08-30T11:57:34Z",
+  "generated_at": "2026-08-31T13:56:49Z",
   "range": {
     "start": "2025-08-31",
+    "end": "2026-08-31"
+  },
+  "total_contributions": 81,
+  "active_days": 14,
+  "avg_per_active_day": 5.8,
+  "current_streak": {
+    "length": 9,
+    "start": "2026-08-22",
     "end": "2026-08-30"
   },
-  "total_contributions": 80,
-  "active_days": 13,
-  "avg_per_active_day": 6.2,
-  "current_streak": {
-    "length": 8,
-    "start": "2026-08-22",
-    "end": "2026-08-29"
-  },
   "longest_streak": {
-    "length": 8,
+    "length": 9,
     "start": "2026-08-22",
-    "end": "2026-08-29"
+    "end": "2026-08-30"
   },
   "best_day": {
     "date": "2026-08-22",
@@ -73,7 +73,7 @@
     },
     {
       "month": "2026-08",
-      "total": 75
+      "total": 76
     }
   ],
   "days": [
@@ -1535,6 +1535,10 @@
     },
     {
       "date": "2026-08-30",
+      "count": 1
+    },
+    {
+      "date": "2026-08-31",
       "count": 0
     }
   ]
